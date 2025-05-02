@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() { // Use AppCompatActivity (not Compone
             // Go to HomeActivity when loginButton is pressed
             val intent = Intent(this,SignupActivity::class.java)
             startActivity(intent)
-        }
 
+            }
     }
 }

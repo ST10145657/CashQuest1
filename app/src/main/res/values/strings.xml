@@ -42,4 +42,26 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+
+    <string name="page_title">Set Your Budget Goals</string>
+    <string name="hint_min_budget_question">What is your minimum budget goal?</string>
+    <string name="hint_min_budget">Enter minimum amount</string>
+    <string name="hint_max_budget_question">What is your maximum budget goal?</string>
+    <string name="hint_max_budget">Enter maximum amount</string>
+    <string name="button_create_category">Save</string> <!-- Changed to "Save" -->
+
+    <!-- Error messages -->
+    <string name="error_empty_fields">Please enter both minimum and maximum budget goals.</string>
+    <string name="error_min_greater_than_max">Minimum goal cannot be greater than maximum goal.</string>
+    <string name="error_invalid_number">Please enter valid numeric values.</string>
+
+    <!-- Result message with placeholders for the min and max goals -->
+    <string name="budget_goal_result">Your budget goals have been set.\nMinimum: %1$.2f\nMaximum: %2$.2f</string>
+
+    <!-- Empty text for initial TextView state -->
+    <string name="empty_text"> </string>
+
+    <string name="go_to_create_category">Create New Category</string>
+
+
 </resources>
