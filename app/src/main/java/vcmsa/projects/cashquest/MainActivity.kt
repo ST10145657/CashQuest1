@@ -4,29 +4,38 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.res.painterResource
 
-class MainActivity : AppCompatActivity() { // Use AppCompatActivity (not ComponentActivity)
+class MainActivity : AppCompatActivity() {
+
+    private lateinit var loginButton: Button
+    private lateinit var signupButton: Button
+    private lateinit var openCreateCategoryButton: Button
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main) // Link to your XML layout
+        setContentView(R.layout.activity_main)
 
-        val loginButton = findViewById<Button>(R.id.loginButton) // Connect to XML button
+        // Initialize buttons
+        loginButton = findViewById(R.id.loginButton)
+        signupButton = findViewById(R.id.signupButton)
 
+
+        // Navigate to LoginActivity
         loginButton.setOnClickListener {
-            // Go to HomeActivity when loginButton is pressed
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
 
-        val SignupButton = findViewById<Button>(R.id.signupButton) // Connect to XML button
-
-        SignupButton.setOnClickListener {
-            // Go to HomeActivity when loginButton is pressed
-            val intent = Intent(this,SignupActivity::class.java)
+        // Navigate to SignupActivity
+        signupButton.setOnClickListener {
+            val intent = Intent(this, SignupActivity::class.java)
             startActivity(intent)
+        }
 
-            }
+        // Navigate to CreateCategoryActivity
+        openCreateCategoryButton.setOnClickListener {
+            val intent = Intent(this, CreateCategoryActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
