@@ -13,9 +13,6 @@
         android:theme="@style/Theme.CashQuest"
         tools:targetApi="31">
         <activity
-            android:name=".CreateCategoryActivity"
-            android:exported="false" />
-        <activity
             android:name=".new_Expense"
             android:exported="false" />
         <activity
